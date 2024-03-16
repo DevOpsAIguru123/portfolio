@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
+
+  <style>
+    #rollingPenguin {
+      position: absolute;
+      left: -100px; /* Start off-screen */
+      animation: rollRight 10s linear infinite;
+    }
+
+    /* Keyframes for rolling animation */
+    @keyframes rollRight {
+      from { left: -100px; }
+      to { left: 100%; }
+    }
+  </style>
   <base target="_blank">
   <meta charset="UTF-8" />
   <title>Vinod Vulavakayala | DevOps Engineer</title>
@@ -15,6 +29,7 @@
 </head>
 
 <body>
+  <img src="./particle_demo/penguin-dance-pengu.gif" alt="Rolling Penguin" id="rollingPenguin">
 
 <div id="particles">
   <div id="intro">
