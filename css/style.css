@@ -129,3 +129,10 @@ p {
     height: 4px;
   }
 }
+@media (max-width: 768px) {
+  /* Styles for screens smaller than 768px (typically tablets and mobile devices) */
+  .container {
+    padding: 10px;
+  }
+}
+
