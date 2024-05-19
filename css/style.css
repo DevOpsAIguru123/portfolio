@@ -68,7 +68,7 @@ body {
 }
 h2 {
   text-transform: uppercase;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: 120;
   color: #ffffff;
   letter-spacing: 0.05em;
@@ -135,4 +135,79 @@ p {
     padding: 10px;
   }
 }
+
+.moving-image {
+  position: relative;
+  width: 100px;  /* Adjust based on your image size */
+  height: 100px; /* Adjust based on your image size */
+}
+
+.moving-image img {
+  position: absolute;
+  animation: moveAround 10s linear infinite;
+}
+
+@keyframes moveAround {
+  0%, 100% {
+      top: 0;
+      left: 0;
+  }
+  25% {
+      top: 0;
+      left: calc(100% - 100px); /* Adjust based on your image size */
+  }
+  50% {
+      top: calc(100% - 100px); /* Adjust based on your image size */
+      left: calc(100% - 100px); /* Adjust based on your image size */
+  }
+  75% {
+      top: calc(100% - 100px); /* Adjust based on your image size */
+      left: 0;
+  }
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+  align-items: center;
+  height: 100vh;
+  background-size: cover;
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
+}
+
+.terminal {
+  background: transparent; /* Transparent background */
+  border: none; /* No border */
+  padding: 20px;
+  color: green;
+  font-size: 1.2em; /* Adjust font size as needed */
+  width: 40%; /* Adjust width as needed */
+  display: flex;
+  align-items: center;
+}
+
+pre {
+  white-space: pre-wrap; /* Makes sure the text will wrap inside the container */
+  margin: 0; /* Remove default margin */
+  display: inline;
+}
+
+.cursor {
+  display: inline-block;
+  background-color: green;
+  width: 10px;
+  height: 1.2em;
+  margin-left: 5px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+      background-color: transparent;
+  }
+}
+
 
