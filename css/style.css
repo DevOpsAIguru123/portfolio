@@ -181,8 +181,8 @@ body {
 .terminal {
   background: transparent; /* Transparent background */
   border: none; /* No border */
-  padding: 20px;
-  color: green;
+  padding: 30px;
+  color: #87ff87;
   font-size: 1.2em; /* Adjust font size as needed */
   width: 40%; /* Adjust width as needed */
   display: flex;
