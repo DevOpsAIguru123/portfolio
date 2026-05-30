@@ -15,16 +15,16 @@ export function Header({ profile }) {
       </nav>
       <div className="header-actions">
         <a href={profile.links.linkedin} aria-label="LinkedIn">
-          <Linkedin size={18} />
+          <Linkedin size={18} aria-hidden="true" />
         </a>
         <a href={profile.links.github} aria-label="GitHub">
-          <Github size={18} />
+          <Github size={18} aria-hidden="true" />
         </a>
         <a href={profile.links.medium} aria-label="Medium">
-          <PenLine size={18} />
+          <PenLine size={18} aria-hidden="true" />
         </a>
         <a className="button button--small" href={`mailto:${profile.email}`}>
-          <Mail size={16} />
+          <Mail size={16} aria-hidden="true" />
           Contact
         </a>
       </div>

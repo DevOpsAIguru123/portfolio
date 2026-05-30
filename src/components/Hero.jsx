@@ -10,15 +10,15 @@ export function Hero({ profile }) {
         <p className="hero__summary">{profile.summary}</p>
         <div className="hero__actions">
           <a className="button" href={`mailto:${profile.email}`}>
-            <Mail size={18} />
+            <Mail size={18} aria-hidden="true" />
             Contact Vinod
           </a>
           <a className="button button--secondary" href={profile.links.resume}>
-            <Download size={18} />
+            <Download size={18} aria-hidden="true" />
             View Resume
           </a>
           <a className="text-link" href={profile.links.linkedin}>
-            LinkedIn <ArrowUpRight size={16} />
+            LinkedIn <ArrowUpRight size={16} aria-hidden="true" />
           </a>
         </div>
       </div>

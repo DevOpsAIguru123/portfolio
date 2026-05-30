@@ -1,3 +1,5 @@
+import resumePdf from '../../assets/vinod-vulavakayala-resume.pdf';
+
 export const profile = {
   name: 'Vinod Vulavakayala',
   title: 'AI Infrastructure & MLOps Platform Engineer',
@@ -9,7 +11,7 @@ export const profile = {
     linkedin: 'https://www.linkedin.com/in/vinod-vulavakayala-076554158/',
     github: 'https://github.com/DevOpsAIguru123',
     medium: 'https://medium.com/@vinoddevopscloud99',
-    resume: '#contact',
+    resume: resumePdf,
   },
   summary:
     'I build secure, scalable, observable, and cost-aware AI platforms across Kubernetes, Databricks, Azure AI, LLM gateways, agent workflows, and production reliability systems.',

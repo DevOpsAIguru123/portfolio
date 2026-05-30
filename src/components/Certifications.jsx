@@ -8,7 +8,7 @@ export function Certifications({ certifications }) {
       <div className="cert-grid">
         {certifications.map((certification) => (
           <div className="cert-card" key={certification}>
-            <Award size={18} />
+            <Award size={18} aria-hidden="true" />
             <span>{certification}</span>
           </div>
         ))}
