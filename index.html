@@ -1,69 +1,17 @@
 <!doctype html>
-<html lang="en" class="no-js">
-<head>
- <style>
-  .moving-image img {
-    position: fixed;
-    width: 100px; /* Adjust based on your image size */
-    height: 100px; /* Adjust based on your image size */
-    animation: moveAround 10s linear infinite;
-}
-
-@keyframes moveAround {
-    0%, 100% {
-        top: 0;
-        left: 0;
-    }
-    25% {
-        top: 0;
-        left: calc(100vw - 100px); /* Adjust based on your image size */
-    }
-    50% {
-        top: calc(100vh - 100px); /* Adjust based on your image size */
-        left: calc(100vw - 100px); /* Adjust based on your image size */
-    }
-    75% {
-        top: calc(100vh - 100px); /* Adjust based on your image size */
-        left: 0;
-    }
-}
-
- </style>
-  <base target="_blank">
-  <meta charset="UTF-8" />
-  <title>Vinod Vulavakayala | DevOps Engineer</title>
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
-  <!-- remember, jQuery is completely optional -->
-  <!-- <script type='text/javascript' src='js/jquery-1.11.1.min.js'></script> -->
-  <script type="text/javascript" src="js/jquery.particleground.js"></script>
-  <script type="text/javascript" src="js/demo.js"></script>
-  <script src="script.js"></script>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<body>
-  <div class="moving-image">
-    <img src="./particle_demo/tux-linux-penguin.gif" alt="Moving GIF">
-</div>
-<div id="particles">
-  <div id="intro">
-      <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">Vinod Vulavakayala || DevOps Engineer&nbsp</h2>
-        <hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
-    <a href="https://www.linkedin.com/in/vinod-vulavakayala-076554158/" style="color: white;"><i class="fab fa-linkedin" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://github.com/devopsaiguru123" style="color: white;"><i class="fab fa-github" style="font-size: 2em;"></i></a>
-    &nbsp
-    <a href="https://medium.com/@vinoddevopscloud99" style="color: white;"><i class="fab fa-medium" style="font-size: 2em;"></i></a>
-  </div>
-</div>
-
-<div class="terminal">
-  <pre id="command-output"></pre><span class="cursor">|</span>
-</div>
-
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vinod Vulavakayala is an AI Infrastructure and MLOps Platform Engineer building Kubernetes, Databricks, Azure AI, LLM gateway, and reliability platforms."
+    />
+    <title>Vinod Vulavakayala | AI Infrastructure & MLOps Platform Engineer</title>
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
