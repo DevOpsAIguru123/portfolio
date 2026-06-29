@@ -27,6 +27,7 @@ html {
 }
 
 #top,
+#featured-build,
 #expertise,
 #experience,
 #stories,
@@ -218,6 +219,67 @@ h3 {
   font-size: 1.16rem;
 }
 
+.role-strip {
+  margin-top: 26px;
+  padding: 16px;
+  border: 1px solid rgba(79, 209, 197, 0.26);
+  border-radius: 10px;
+  background: rgba(79, 209, 197, 0.06);
+}
+
+.role-strip > span,
+.project-card > span,
+.featured-build__badge {
+  color: var(--accent-2);
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.role-strip > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.role-strip strong {
+  border: 1px solid rgba(138, 180, 255, 0.28);
+  border-radius: 999px;
+  padding: 8px 10px;
+  background: rgba(138, 180, 255, 0.08);
+  color: #e8f1ff;
+  font-size: 0.88rem;
+}
+
+.why-hire {
+  margin-top: 22px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--accent);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.why-hire h2 {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.why-hire ul,
+.featured-build__card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.why-hire li + li,
+.featured-build__card li + li {
+  margin-top: 8px;
+}
+
 .hero__actions {
   flex-wrap: wrap;
   gap: 14px;
@@ -237,6 +299,8 @@ h3 {
 .expertise-card,
 .timeline-card,
 .story-card,
+.featured-build__card,
+.project-card,
 .cert-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -307,10 +371,48 @@ h3 {
 }
 
 .expertise-grid,
-.story-grid {
+.story-grid,
+.project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.featured-build__layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.8fr) minmax(0, 1.2fr);
+  gap: 18px;
+}
+
+.featured-build__card,
+.project-card {
+  padding: 22px;
+}
+
+.featured-build__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.featured-build__card p,
+.project-card p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .tag-list {
+  margin: 8px 0 18px;
+}
+
+.project-card .text-link {
+  margin-top: auto;
 }
 
 .expertise-card,
@@ -390,6 +492,7 @@ h3 {
 
 @media (max-width: 980px) {
   #top,
+  #featured-build,
   #expertise,
   #experience,
   #stories,
@@ -410,6 +513,7 @@ h3 {
   }
 
   .hero,
+  .featured-build__layout,
   .timeline-card,
   .contact-section {
     grid-template-columns: 1fr;
@@ -418,6 +522,7 @@ h3 {
   .metrics,
   .expertise-grid,
   .story-grid,
+  .project-grid,
   .cert-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -448,6 +553,7 @@ h3 {
   .metrics,
   .expertise-grid,
   .story-grid,
+  .project-grid,
   .cert-grid,
   .contact-actions {
     grid-template-columns: 1fr;

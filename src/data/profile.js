@@ -5,8 +5,9 @@ export const profile = {
   title: 'AI Infrastructure & MLOps Platform Engineer',
   location: 'Houston, TX',
   phone: '816-878-9901',
-  email: 'vinn143tux@gmail.com',
+  email: 'vinoddevopscloud99@gmail.com',
   website: 'vinodvulavakayala.com',
+  targetRoles: ['AI Platform Engineer', 'MLOps Engineer', 'Cloud Platform Engineer', 'SRE', 'DevOps / Infrastructure Engineer', 'Forward Deployment Engineer'],
   links: {
     linkedin: 'https://www.linkedin.com/in/vinod-vulavakayala-076554158/',
     github: 'https://github.com/DevOpsAIguru123',
@@ -15,6 +16,13 @@ export const profile = {
   },
   summary:
     'I build secure, scalable, observable, and cost-aware AI platforms across Kubernetes, Databricks, Azure AI, LLM gateways, agent workflows, and production reliability systems.',
+  whyHire: [
+    '8+ years across DevOps, SRE, cloud, MLOps, and AI platform engineering.',
+    'Operated AKS-based AI inference and data platforms with reliability, RBAC, observability, and cost controls.',
+    'Reduced GPU compute costs by 25% while maintaining 99.99% uptime for LLM serving paths.',
+    'Migrated 20+ AWS Glue ETL pipelines into governed Databricks Jobs and Delta Live Tables.',
+    'Built LLM gateway controls for routing, quotas, authentication, prompt traces, governance, and cost visibility.',
+  ],
   stats: [
     { value: '8+', label: 'Years', detail: 'DevOps, cloud, SRE, MLOps, and AI platform engineering' },
     { value: '99.99%', label: 'Uptime', detail: 'Azure OpenAI and LLM serving infrastructure' },
@@ -24,7 +32,7 @@ export const profile = {
   ],
   expertise: [
     {
-      name: 'AI Infrastructure',
+      name: 'AI Infrastructure & Inference',
       items: ['Azure OpenAI', 'Azure AI Search', 'Document Intelligence', 'Llama 3', 'GPT-4', 'RAG', 'AIOps', 'prompt traces'],
     },
     {
@@ -36,8 +44,8 @@ export const profile = {
       items: ['Databricks', 'MLflow', 'Unity Catalog', 'Delta Live Tables', 'Databricks Jobs', 'model registry', 'promotion gates'],
     },
     {
-      name: 'LLM Gateway & Agents',
-      items: ['multi-provider routing', 'authentication', 'rate limits', 'token quotas', 'LangChain', 'MCP servers', 'Claude Code agents'],
+      name: 'LLM Gateways, RAG & Agents',
+      items: ['multi-provider routing', 'authentication', 'rate limits', 'token quotas', 'RAG evaluation', 'LangChain', 'MCP servers', 'Claude Code agents'],
     },
     {
       name: 'Reliability & Observability',
@@ -94,6 +102,12 @@ export const profile = {
   ],
   stories: [
     {
+      title: 'Enterprise RAG and agent evaluation path',
+      problem: 'AI teams needed measurable quality gates before promoting RAG and agent workflows beyond prototypes.',
+      action: 'Defined evaluation patterns for retrieval relevance, citation accuracy, hallucination checks, prompt-injection resistance, latency, cost, and safe tool-use boundaries.',
+      outcome: 'Created a repeatable production-readiness path for enterprise AI agents and LLM gateway workflows.',
+    },
+    {
       title: 'AI inference platform on AKS',
       problem: 'AI teams needed reliable LLM serving paths with operational guardrails.',
       action: 'Deployed Llama 3 and GPT-4 endpoints on AKS with autoscaling, private networking, workload identity, telemetry, and GPU capacity controls.',
@@ -118,13 +132,48 @@ export const profile = {
       outcome: 'Improved production readiness across dev, stage, and production workflows.',
     },
   ],
+  featuredBuild: {
+    title: 'Enterprise RAG Agent Platform',
+    summary:
+      'A portfolio-ready AI platform build that connects LLM gateway controls, RAG quality gates, Kubernetes deployment patterns, and observability into one production-shaped story.',
+    problem:
+      'Enterprise AI teams need more than a demo chatbot: they need governed retrieval, measurable answer quality, safe tool boundaries, traceability, and an operating model that platform teams can support.',
+    proofPoints: [
+      'Multi-provider LLM gateway patterns for authentication, routing, rate limits, quotas, prompt traces, and cost visibility.',
+      'RAG evaluation scorecards for retrieval relevance, citation correctness, hallucination resistance, and prompt-injection handling.',
+      'Kubernetes and Cloud Run deployment decisioning with private networking, least privilege, telemetry, rollback, and release gates.',
+    ],
+    projects: [
+      {
+        label: 'AI platform',
+        name: 'Enterprise RAG readiness',
+        description: 'Spec-first RAG workflow with quality gates, citation checks, security boundaries, and deployability criteria.',
+        stack: ['RAG', 'eval scorecards', 'prompt traces', 'governance'],
+        href: 'https://github.com/DevOpsAIguru123/rag_v2',
+      },
+      {
+        label: 'Agent workflows',
+        name: 'LLM gateway and MCP automation',
+        description: 'Agent and MCP patterns that turn repetitive platform operations into traceable, reviewable automation.',
+        stack: ['MCP', 'LangChain', 'Claude Code', 'automation'],
+        href: 'https://github.com/DevOpsAIguru123/AI-Agents',
+      },
+      {
+        label: 'Platform engineering',
+        name: 'Kubernetes AI inference platform',
+        description: 'AKS/GPU platform practices for scalable inference, observability, RBAC, cost controls, and reliability gates.',
+        stack: ['AKS', 'GPU pools', 'OpenTelemetry', 'Terraform'],
+        href: 'https://github.com/DevOpsAIguru123/kubernetes',
+      },
+    ],
+  },
   certifications: [
+    'NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO)',
     'Microsoft Azure AI Engineer (AI-102)',
-    'Microsoft Azure Cloud Administrator (AZ-104)',
-    'Microsoft Azure Security Engineer (AZ-500)',
-    'AWS Certified Developer - Associate',
     'Certified Kubernetes Administrator (CKA), CNCF',
     'Databricks Administrator',
-    'NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO)',
+    'Microsoft Azure Security Engineer (AZ-500)',
+    'Microsoft Azure Cloud Administrator (AZ-104)',
+    'AWS Certified Developer - Associate',
   ],
 };
