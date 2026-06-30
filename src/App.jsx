@@ -2,6 +2,7 @@ import { Certifications } from './components/Certifications.jsx';
 import { Contact } from './components/Contact.jsx';
 import { Experience } from './components/Experience.jsx';
 import { Expertise } from './components/Expertise.jsx';
+import { FeaturedBuild } from './components/FeaturedBuild.jsx';
 import { Header } from './components/Header.jsx';
 import { Hero } from './components/Hero.jsx';
 import { Metrics } from './components/Metrics.jsx';
@@ -15,6 +16,7 @@ export default function App() {
       <main>
         <Hero profile={profile} />
         <Metrics stats={profile.stats} />
+        <FeaturedBuild build={profile.featuredBuild} />
         <Expertise expertise={profile.expertise} />
         <Experience experience={profile.experience} />
         <PlatformStories stories={profile.stories} />

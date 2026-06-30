@@ -8,6 +8,22 @@ export function Hero({ profile }) {
         <h1>{profile.name}</h1>
         <p className="hero__title">{profile.title}</p>
         <p className="hero__summary">{profile.summary}</p>
+        <div className="role-strip" aria-label="Target roles">
+          <span>Target roles</span>
+          <div>
+            {profile.targetRoles.map((role) => (
+              <strong key={role}>{role}</strong>
+            ))}
+          </div>
+        </div>
+        <div className="impact-snapshot" aria-label="Impact snapshot">
+          <h2>Impact Snapshot</h2>
+          <ul>
+            {profile.impactSnapshot.map((impact) => (
+              <li key={impact}>{impact}</li>
+            ))}
+          </ul>
+        </div>
         <div className="hero__actions">
           <a className="button" href={`mailto:${profile.email}`}>
             <Mail size={18} aria-hidden="true" />

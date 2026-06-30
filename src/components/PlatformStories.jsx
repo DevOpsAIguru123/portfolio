@@ -3,7 +3,7 @@ import { SectionHeading } from './SectionHeading.jsx';
 export function PlatformStories({ stories }) {
   return (
     <section className="page-section" id="stories">
-      <SectionHeading eyebrow="Platform stories" title="Short proof points for engineering leaders">
+      <SectionHeading eyebrow="Platform stories" title="AI Platform Case Studies">
         <p>Each story connects a real platform problem to infrastructure action and business-visible outcome.</p>
       </SectionHeading>
       <div className="story-grid">
