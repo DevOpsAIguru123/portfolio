@@ -15,13 +15,11 @@ export const profile = {
     resume: resumePdf,
   },
   summary:
-    'I build secure, scalable, observable, and cost-aware AI platforms across Kubernetes, Databricks, Azure AI, LLM gateways, agent workflows, and production reliability systems.',
-  whyHire: [
-    '8+ years across DevOps, SRE, cloud, MLOps, and AI platform engineering.',
-    'Operated AKS-based AI inference and data platforms with reliability, RBAC, observability, and cost controls.',
-    'Reduced GPU compute costs by 25% while maintaining 99.99% uptime for LLM serving paths.',
-    'Migrated 20+ AWS Glue ETL pipelines into governed Databricks Jobs and Delta Live Tables.',
-    'Built LLM gateway controls for routing, quotas, authentication, prompt traces, governance, and cost visibility.',
+    'I build secure, scalable, observable, and cost-aware AI platforms across Kubernetes, Databricks, Azure AI, AWS, GCP, LLM gateways, agent workflows, and production reliability systems.',
+  impactSnapshot: [
+    'Set up AI/ML infrastructure from zero to production on Azure cloud and Databricks.',
+    '99.99% uptime for Azure OpenAI and LLM serving infrastructure.',
+    '25% GPU cost reduction through right-sizing and spot scheduling.',
   ],
   stats: [
     { value: '8+', label: 'Years', detail: 'DevOps, cloud, SRE, MLOps, and AI platform engineering' },

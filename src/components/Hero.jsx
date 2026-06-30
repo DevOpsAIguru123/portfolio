@@ -16,11 +16,11 @@ export function Hero({ profile }) {
             ))}
           </div>
         </div>
-        <div className="why-hire" aria-label="Why hire Vinod">
-          <h2>Why hire me</h2>
+        <div className="impact-snapshot" aria-label="Impact snapshot">
+          <h2>Impact Snapshot</h2>
           <ul>
-            {profile.whyHire.map((reason) => (
-              <li key={reason}>{reason}</li>
+            {profile.impactSnapshot.map((impact) => (
+              <li key={impact}>{impact}</li>
             ))}
           </ul>
         </div>

@@ -10,7 +10,7 @@ export function Header({ profile }) {
       <nav className="nav-links" aria-label="Primary navigation">
         <a href="#expertise">Expertise</a>
         <a href="#experience">Experience</a>
-        <a href="#stories">Stories</a>
+        <a href="#stories">Case Studies</a>
         <a href="#contact">Contact</a>
       </nav>
       <div className="header-actions">
